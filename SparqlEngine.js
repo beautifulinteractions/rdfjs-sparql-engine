@@ -20,10 +20,13 @@ class SparqlEngine {
    * @param query sparql query
    * @returns {}
    */
-  query(query) {
-    const termsMaterializerIterator = new TermsMaterializerIterator();
-    termsMaterializerIterator.source = new SparqlIterator(query, { fragmentsClient: this._fragmentsClient });
-    return termsMaterializerIterator;
+  query(query, opts) {
+    if (!opts) opts = {};
+    let iterator = new SparqlIterator(query, { fragmentsClient: this._fragmentsClient });
+    if (opts.materialize !== false) {
+      iterator = new TermsMaterializerIterator(iterator);
+    }
+    return iterator;
   }
 
 }
