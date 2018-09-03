@@ -1,6 +1,6 @@
 {
   "name": "rdfjs-sparql-engine",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "SparqlEngine.js",
   "scripts": {
@@ -10,13 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "asynciterator": "^1.1.0",
-    "ldf-client": "github:beautifulinteractions/Client.js#bi",
+    "ldf-client": "github:beautifulinteractions/Client.js#fe69fb10dc01a8401fbb84e1a182a8cd58d639a8",
     "lodash": "^4.17.4",
     "n3": "^0.11.2",
     "rdf-data-model": "^1.0.0"
   },
   "devDependencies": {
-    "asynctools": "github:jacoscaz/asynctools",
     "memdown": "^1.4.1",
     "mocha": "^4.0.1",
     "nanoid": "^1.0.1",
