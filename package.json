@@ -16,7 +16,6 @@
     "rdf-data-model": "^1.0.0"
   },
   "devDependencies": {
-    "asynctools": "github:jacoscaz/asynctools",
     "memdown": "^1.4.1",
     "mocha": "^4.0.1",
     "nanoid": "^1.0.1",
