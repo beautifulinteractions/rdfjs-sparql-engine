@@ -1,6 +1,6 @@
 {
   "name": "rdfjs-sparql-engine",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "SparqlEngine.js",
   "scripts": {
